@@ -1,5 +1,8 @@
 body {
     background-color: #F1DEC9;
+    margin:0;
+    font-family: monospace;
+
 }
 hr {
     background-color: #F1DEC9;
@@ -12,4 +15,34 @@ hr {
 h1 {
     color: #006E33;
     font: "Fira Sans", serif;
+    margin-top:1px;
+    margin-bottom:0px;
+    
+}
+h2 {
+    font: "Fira Sans", serif;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.TopContainer {
+    background-color:#C8B6A6;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.Middle1Container {
+    background-color: #A4907C;
+    margin-top:0px;
+}
+.BottomContainer {
+    background-color: #8D7B68;
+}
+
+.test {
+    text-decoration: underline;
+}
+
+
+
+.maindescriptor{
+    text-underline-position: under
 }
