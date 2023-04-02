@@ -30,20 +30,21 @@ h2 {
 }
 .TopContainer {
     background-color:#C8B6A6;
-    margin-top:0px;
-    margin-bottom:0px;
+    margin: 0px 10% 0px 10%;
 }
 .Middle1Container {
     background-color: #A4907C;
-    margin-top:0px;
     border-color:#F1DEC9;
+    margin: 0px 10% 0px 10%;
+    border-radius: 10px 10px 0px 0px;
 
 }
 .Middle2Container {
     background-color: #F1DEC9;
     margin-top:0px;
     border-color:#F1DEC9;
-}
+    margin: 0px 10% 0px 10%;
+    }
 
 
 li {
