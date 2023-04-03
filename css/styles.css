@@ -28,6 +28,34 @@ h2 {
     margin-bottom:0px;
     margin-left:10%;
 }
+
+li {
+    margin-left:5%;
+}
+
+ol {
+    margin-left:2%;
+}
+
+
+image {
+    background-color:#8D7B68;
+}
+
+p {
+    white-space: pre-line;
+  
+}
+
+a:hover::before{
+    content: "> ";
+}
+
+li a:hover::before{
+    content: "> ";
+}
+
+/* Unique Containers */
 .divPositioner {
     margin: 5px 20% 5px 20%;
     content: "";
@@ -56,21 +84,9 @@ h2 {
 
 .textContainer {
     font: "Fira Sans", serif;
-    margin: 2% 10% 2% 10%;
+    margin: 2% 5% 2% 5%;
 }
 
-li {
-    margin-left:5%;
-}
-
-ol {
-    margin-left:2%;
-}
-
-
-image {
-    background-color:#8D7B68;
-}
 
 .dip {
     background-color:#8D7B68;
@@ -92,14 +108,20 @@ image {
     color: #b0b050;
 }
 
-
-
-p {
-    white-space: pre-line;
-  
+.invisbleTable {
+    display: table;
 }
 
-li a:hover::before{
-    content: "> ";
+.tabletd {
+    padding: 5px;
+    float:left;
 }
+
+.aTerminal {
+    color: #b0b050;
+}
+
+
+
+
 
