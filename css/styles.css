@@ -29,6 +29,12 @@ h2 {
     margin-left:10%;
 }
 
+h4 {
+    font-family: monospace;
+    margin-left:3px;  
+    margin-right: 3px;
+}
+
 li {
     margin-left:5%;
 }
@@ -87,11 +93,6 @@ li a:hover::before{
     margin: 2% 5% 2% 5%;
 }
 
-
-.dip {
-    background-color:#8D7B68;
-}
-
 .maindescriptor{
     text-underline-position: under
 }
@@ -100,6 +101,7 @@ li a:hover::before{
     padding: 5px;
     margin: 5px 10% 10px 10%;
     font-size: 1.1em;
+    overflow:hidden;
 }
 
 .terminalColor {
@@ -110,6 +112,7 @@ li a:hover::before{
 
 .invisbleTable {
     display: table;
+    margin: 2px 5% 2px 5% ;
 }
 
 .tabletd {
@@ -117,8 +120,87 @@ li a:hover::before{
     float:left;
 }
 
+div.charEntry {
+    padding: 10px;
+    float:left;
+    border: 2px solid #002200;
+    width: 47.5%;
+    background-color: #C8B6A6;
+    margin: 1px 3px 1px 3px;
+    border-radius: 10px;
+    transition: 300ms;
+
+}
+
+div.charEntry:hover {
+    transform: scale(105%) translateX(0) ;
+    background-color: #e7c9a9;
+}
+
+div.tableDesc {
+    display: table;
+    margin: 2px 1% 2px 1% ;
+    height: 80%;
+}
+
+p.verticalAligned {
+    margin: 0px 0px 0px 0px;
+    white-space: normal;
+    padding: 2px;
+}
+
 .aTerminal {
     color: #b0b050;
+}
+
+.longDesc {
+    text-align:justify;
+    height:80%;
+}
+
+a.titleLink:link {
+    color: #006E33;
+}
+
+a.titleLink:visited {
+    color: #0a6434;
+}
+
+table.basicIDTable {
+    table-layout:auto;
+    width: 100%;
+    border-collapse:separate;
+    border-spacing:3px;
+    border:#8D7B68 1px;
+    height: 80%;
+}
+
+span.scrollText {
+    display: block; /* Important to give the content a width */
+
+    width: 100%;
+    transform: translateX(100%); /* Animation start out of the screen */
+    white-space:nowrap;
+    /* Add the animation */
+    animation: move 20s linear infinite /* infinite make reapeat the animation indefinitely */;
+}
+@keyframes move {
+    to { transform: translateX(-150%); }
+}
+li.noMargin {
+    margin-left:0%;   
+}
+
+
+/*Image Cases */
+
+.dip {
+    background-color:#8D7B68;
+}
+
+div.charEntryMed {
+    background-color: #C8B6A6;
+    opacity:1;
 }
 
 
