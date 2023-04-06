@@ -9,7 +9,7 @@ hr {
     background-color: #8D7B68;
     border-color: #8D7B68;
     border-style: inset none none none;
-    border-width: 5px;
+    border-width: 3px;
     height: 0px;
     width: 40%;
 
@@ -27,6 +27,12 @@ h2 {
     margin-top:0px;
     margin-bottom:0px;
     margin-left:10%;
+}
+
+h4 {
+    font-family: monospace;
+    margin-left:3px;  
+    margin-right: 3px;
 }
 
 li {
@@ -87,11 +93,6 @@ li a:hover::before{
     margin: 2% 5% 2% 5%;
 }
 
-
-.dip {
-    background-color:#8D7B68;
-}
-
 .maindescriptor{
     text-underline-position: under
 }
@@ -100,6 +101,7 @@ li a:hover::before{
     padding: 5px;
     margin: 5px 10% 10px 10%;
     font-size: 1.1em;
+    overflow:hidden;
 }
 
 .terminalColor {
@@ -110,6 +112,7 @@ li a:hover::before{
 
 .invisbleTable {
     display: table;
+    margin: 2px 5% 2px 5% ;
 }
 
 .tabletd {
@@ -117,8 +120,158 @@ li a:hover::before{
     float:left;
 }
 
+div.charEntrybox {
+    padding: 12px;
+    border: 2px solid #002200;
+    background-color: #C8B6A6;
+    margin: 1px 15% 1px 15%;
+    border-radius: 10px;
+    transition: 300ms;
+    
+}
+
+div.charEntrybox:hover {
+    transform: scale(105%) translateX(0) ;
+    background-color: #e7c9a9;
+}
+
+div.basicInfoBox {
+    display:flex;
+    padding: 2px;
+    /*background-color: blue;*/
+    margin: 1px 5% 1px 5%;
+}
+
+.charFlexBox {
+    flex: 0.8;
+    margin: 1px 1px 1px 1px;
+    background-color: pink;
+    height:10%
+}
+
+.charFlexBoxLeft {
+    flex: 0.4;
+    margin: 1px 1px 1px 1px;
+    /*background-color: pink;*/
+    height:20%;
+}
+
+.charFlexBoxRight {
+    flex: 0.8;
+    margin: 1px 1px 1px 1px;
+    /*background-color: pink;*/
+    height:10%
+}
+
+.charFlexBox:first-child {
+    padding: 0px;
+}
+
+.charImgBox {
+    margin: 1px 0% 0px 0%;
+}
+
+.charLongDesc {
+    margin: 1px 1px 1px 1px;
+}
+
+div.charbasicInfo {
+    margin: 1px 5% 1px 5%;
+}
+
+div.charEntry {
+    padding: 12px;
+    border: 2px solid #002200;
+    width: 100%;
+    background-color: #C8B6A6;
+    margin: 1px 3px 1px 3px;
+    border-radius: 10px;
+    transition: 300ms;
+    display:block
+
+}
+
+div.charEntryHeading {
+    display :table;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:5px;
+}
+
+
+div.shortDesc {
+    margin-top: 2.5%;
+}
+
+div.charEntry:hover {
+    transform: scale(105%) translateX(0) ;
+    background-color: #e7c9a9;
+}
+
+div.tableDesc {
+    display: table;
+    margin: 2px 1% 2px 1% ;
+    height: 80%;
+}
+
+p.verticalAligned {
+    margin: 0px 0px 0px 0px;
+    white-space: normal;
+    padding: 2px;
+}
+
 .aTerminal {
     color: #b0b050;
+}
+
+.longDesc {
+    text-align:justify;
+    height:80%;
+}
+
+a.titleLink:link {
+    color: #006E33;
+}
+
+a.titleLink:visited {
+    color: #0a6434;
+}
+
+table.basicIDTable {
+    table-layout:auto;
+    width: 100%;
+    border-collapse:separate;
+    border-spacing:3px;
+    border:#8D7B68 1px;
+    height: 80%;
+}
+
+span.scrollText {
+    display: block; /* Important to give the content a width */
+
+    width: 100%;
+    transform: translateX(100%); /* Animation start out of the screen */
+    white-space:nowrap;
+    /* Add the animation */
+    animation: move 20s linear infinite /* infinite make reapeat the animation indefinitely */;
+}
+@keyframes move {
+    to { transform: translateX(-150%); }
+}
+li.noMargin {
+    margin-left:0%;   
+}
+
+
+/*Image Cases */
+
+.dip {
+    background-color:#8D7B68;
+}
+
+div.charEntryMed {
+    background-color: #C8B6A6;
+    opacity:1;
 }
 
 
