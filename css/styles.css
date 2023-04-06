@@ -9,7 +9,7 @@ hr {
     background-color: #8D7B68;
     border-color: #8D7B68;
     border-style: inset none none none;
-    border-width: 5px;
+    border-width: 3px;
     height: 0px;
     width: 40%;
 
@@ -120,16 +120,87 @@ li a:hover::before{
     float:left;
 }
 
-div.charEntry {
-    padding: 10px;
-    float:left;
+div.charEntrybox {
+    padding: 12px;
     border: 2px solid #002200;
-    width: 47.5%;
+    background-color: #C8B6A6;
+    margin: 1px 15% 1px 15%;
+    border-radius: 10px;
+    transition: 300ms;
+    
+}
+
+div.charEntrybox:hover {
+    transform: scale(105%) translateX(0) ;
+    background-color: #e7c9a9;
+}
+
+div.basicInfoBox {
+    display:flex;
+    padding: 2px;
+    /*background-color: blue;*/
+    margin: 1px 5% 1px 5%;
+}
+
+.charFlexBox {
+    flex: 0.8;
+    margin: 1px 1px 1px 1px;
+    background-color: pink;
+    height:10%
+}
+
+.charFlexBoxLeft {
+    flex: 0.4;
+    margin: 1px 1px 1px 1px;
+    /*background-color: pink;*/
+    height:20%;
+}
+
+.charFlexBoxRight {
+    flex: 0.8;
+    margin: 1px 1px 1px 1px;
+    /*background-color: pink;*/
+    height:10%
+}
+
+.charFlexBox:first-child {
+    padding: 0px;
+}
+
+.charImgBox {
+    margin: 1px 0% 0px 0%;
+}
+
+.charLongDesc {
+    margin: 1px 1px 1px 1px;
+}
+
+div.charbasicInfo {
+    margin: 1px 5% 1px 5%;
+}
+
+div.charEntry {
+    padding: 12px;
+    border: 2px solid #002200;
+    width: 100%;
     background-color: #C8B6A6;
     margin: 1px 3px 1px 3px;
     border-radius: 10px;
     transition: 300ms;
+    display:block
 
+}
+
+div.charEntryHeading {
+    display :table;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:5px;
+}
+
+
+div.shortDesc {
+    margin-top: 2.5%;
 }
 
 div.charEntry:hover {
