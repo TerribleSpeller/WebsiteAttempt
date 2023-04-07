@@ -87,15 +87,6 @@ li a:hover::before{
     border-radius: 10px 10px 10px 10px;
     margin: 5px;
 }
-.Middle3Container {
-    background-color: #F1DEC9;
-    /*margin-top:0px;*/
-    border-color:#F1DEC9;
-    border-radius: 10px 10px 10px 10px;
-    margin: 5px;
-    position:relative;
-    overflow: hidden;
-}
 
 .textContainer {
     font: "Fira Sans", serif;
@@ -133,15 +124,10 @@ div.charEntrybox {
     padding: 12px;
     border: 2px solid #002200;
     background-color: #C8B6A6;
-    margin: 1px 1% 1px 1%;
+    margin: 1px 15% 1px 15%;
     border-radius: 10px;
-    transition: 300ms ease-in-out;
-    flex: 1 1 auto;
-    flex-grow:1;
-    width: 1000px;
-    height: 700px;
-    flex-basis:700px;
-
+    transition: 300ms;
+    
 }
 
 div.charEntrybox:hover {
@@ -154,7 +140,6 @@ div.basicInfoBox {
     padding: 2px;
     /*background-color: blue;*/
     margin: 1px 5% 1px 5%;
-
 }
 
 .charFlexBox {
@@ -201,9 +186,9 @@ div.charEntry {
     background-color: #C8B6A6;
     margin: 1px 3px 1px 3px;
     border-radius: 10px;
-    transition: 300ms ;
-    display:block;
-    position: absolute;
+    transition: 300ms;
+    display:block
+
 }
 
 div.charEntryHeading {
@@ -227,43 +212,6 @@ div.tableDesc {
     display: table;
     margin: 2px 1% 2px 1% ;
     height: 80%;
-}
-
-.button-box {
-    display:flex;
-    padding: 1rem;
-    width:50%;
-    margin: 0px auto;
-    border-radius: 5px;
-    background-color: #C8B6A6;
-    border: 2px solid #002200;
-
-}
-
-.button-boxes {
-    display:flex;
-    padding: 0;
-    margin: 0px auto;
-}
-
-.coolButtons {
-    background-color:#8D7B68;
-    transition: 300ms;
-    width:80px;
-    height: 100%;
-    margin: 0px auto;
-    text-align: center;
-}
-
-.coolButtons:active {
-    border-radius: 25%;
-    background-color:#C8B6A6;  
-    transform: scale(110%) translateX(0) ;
-}
-
-.charCarousel {
-    display: flex;
-    transition: transform 2s ease;
 }
 
 p.verticalAligned {
@@ -314,26 +262,6 @@ li.noMargin {
     margin-left:0%;   
 }
 
-/*  Carosel Animation */
-.slidein {
-    animation-name: slidein;
-    animation-duration: 1.5s;
-}
-
-.slideout {
-    animation-name: slideout;
-    animation-duration: 1.5s;
-}
-  
-@keyframes slidein {
-  from {transform: translateX(-200%)}
-  to {transform: translateX(0%)}
-}
-
-@keyframes slideout {
-    from {transform: translateX(0%)}
-    to {transform: translateX(200%)}
-  }
 
 /*Image Cases */
 
