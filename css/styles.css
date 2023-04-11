@@ -124,14 +124,14 @@ div.charEntrybox {
     padding: 12px;
     border: 2px solid #002200;
     background-color: #C8B6A6;
-    margin: 1px 15% 1px 15%;
+    margin: 3px 15% 3px 15%;
     border-radius: 10px;
     transition: 300ms;
     
 }
 
 div.charEntrybox:hover {
-    transform: scale(105%) translateX(0) ;
+    transform: scale(101%) translateX(0) ;
     background-color: #e7c9a9;
 }
 
