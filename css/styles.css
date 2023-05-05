@@ -29,6 +29,10 @@ li a:hover::before{
     background-color: #D4C6A5;
 }
 
+.border-rad-5 {
+    border-radius:5px;
+}
+
 .longerHR
 
 
