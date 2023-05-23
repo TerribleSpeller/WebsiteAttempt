@@ -1,56 +1,11 @@
+/*
+Legacy from original Website
+*/
+
 body {
     background-color: #C8B6A6;
     margin:0;
     font-family: monospace;
-    
-
-}
-hr {
-    background-color: #8D7B68;
-    border-color: #8D7B68;
-    border-style: inset none none none;
-    border-width: 3px;
-    height: 0px;
-    width: 40%;
-
-}
-h1 {
-    color: #006E33;
-    font-family: monospace;
-    margin-top:1px;
-    margin-bottom:0px;
-    margin-left:10%;
-    
-}
-h2 {
-    font-family: monospace;
-    margin-top:0px;
-    margin-bottom:0px;
-    margin-left:10%;
-}
-
-h4 {
-    font-family: monospace;
-    margin-left:3px;  
-    margin-right: 3px;
-}
-
-li {
-    margin-left:5%;
-}
-
-ol {
-    margin-left:2%;
-}
-
-
-image {
-    background-color:#8D7B68;
-}
-
-p {
-    white-space: pre-line;
-  
 }
 
 a:hover::before{
@@ -61,220 +16,163 @@ li a:hover::before{
     content: "> ";
 }
 
-/* Unique Containers */
-.divPositioner {
-    margin: 5px 20% 5px 20%;
-    content: "";
-    clear: both;
-
-}
-.TopContainer {
-    background-color:#C8B6A6;
-    margin: 0px 10% 0px 10%;
-
-}
-.Middle1Container {
-    background-color: #A4907C;
-    border-color:#F1DEC9;
-    border-radius: 10px 10px 10px 10px;
-    margin: 5px;
-
-}
-.Middle2Container {
-    background-color: #F1DEC9;
-    /*margin-top:0px;*/
-    border-color:#F1DEC9;
-    border-radius: 10px 10px 10px 10px;
-    margin: 5px;
+.icon {
+    background-color: #8D7B68;
+    border-radius:50%;
 }
 
-.textContainer {
-    font: "Fira Sans", serif;
-    margin: 2% 5% 2% 5%;
+.bg-brown {
+    background-color: #DECAAD;
 }
 
-.maindescriptor{
-    text-underline-position: under
+.bg-lessbrown {
+    background-color: #D4C6A5;
 }
 
-.terminalSetup {
-    padding: 5px;
-    margin: 5px 10% 10px 10%;
-    font-size: 1.1em;
-    overflow:hidden;
+.border-rad-5 {
+    border-radius:5px;
 }
 
-.terminalColor {
-    background-color: #002200;
-    border: 5px solid #463D34;
-    color: #b0b050;
-}
 
-.invisbleTable {
-    display: table;
-    margin: 2px 5% 2px 5% ;
-}
 
-.tabletd {
-    padding: 5px;
-    float:left;
-}
+/*
+    Modification of existiing Bootstraps classes because I don't like their asethethics
+*/
 
-div.charEntrybox {
-    padding: 12px;
-    border: 2px solid #002200;
-    background-color: #C8B6A6;
-    margin: 1px 15% 1px 15%;
-    border-radius: 10px;
-    transition: 300ms;
+
+.nav-pills {
     
+    --bs-nav-pills-border-radius: var(--bs-border-radius);
+    --bs-nav-pills-link-active-bg: #FFF5ED;
 }
 
-div.charEntrybox:hover {
-    transform: scale(105%) translateX(0) ;
-    background-color: #e7c9a9;
+.nav-pills .nav-link.active {
+    background-color: #807158;
 }
 
-div.basicInfoBox {
-    display:flex;
-    padding: 2px;
-    /*background-color: blue;*/
-    margin: 1px 5% 1px 5%;
+.nav {
+    --bs-nav-link-hover-color: #755951;    
 }
 
-.charFlexBox {
-    flex: 0.8;
-    margin: 1px 1px 1px 1px;
-    background-color: pink;
-    height:10%
+.nav-link {
+    color: #755951;
+}   
+
+.container {
+    flex-wrap:wrap;
 }
 
-.charFlexBoxLeft {
-    flex: 0.4;
-    margin: 1px 1px 1px 1px;
-    /*background-color: pink;*/
-    height:20%;
+/*
+Unique Shit
+*/
+
+.link-color-unique {
+    color: #755951
 }
 
-.charFlexBoxRight {
-    flex: 0.8;
-    margin: 1px 1px 1px 1px;
-    /*background-color: pink;*/
-    height:10%
+/*Shit I stole from the SCP Wiki lmao*/
+
+:root {
+    --posX: calc(38% - 358px - 12rem);
+    --fnTransition: 0.3s;
+    --fnLinger: 0.15s;
+    --fnInteract: calc(var(--fnTransition) + var(--fnLinger));
 }
-
-.charFlexBox:first-child {
-    padding: 0px;
+ 
+/*--- Footnote Auto-counter --*/
+#main-content {
+    counter-reset: megacount;
 }
-
-.charImgBox {
-    margin: 1px 0% 0px 0%;
+ 
+/*--- Footnote Superscript Number --*/
+.fnnum {
+    display: inline-block;
+    width: max-content;
+    text-indent: -0.475ex;
+    vertical-align: super;
+    line-height: 80%;
+    word-break: initial;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: initial;
+    color: transparent;
+    position: relative;
+    font-size: 80%;
+    padding: .15em .05em;
+    margin-right: -0.25em;
+    counter-increment: megacount;
+    -webkit-user-select: none;
+    user-select: none;
 }
-
-.charLongDesc {
-    margin: 1px 1px 1px 1px;
+.fnnum::after {
+    content: "*";
+    color: var(--fnColor, #E6283C);
 }
-
-div.charbasicInfo {
-    margin: 1px 5% 1px 5%;
+.fnnum:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--fnColor, #D4C6A5);
 }
-
-div.charEntry {
-    padding: 12px;
-    border: 2px solid #002200;
-    width: 100%;
-    background-color: #C8B6A6;
-    margin: 1px 3px 1px 3px;
-    border-radius: 10px;
-    transition: 300ms;
-    display:block
-
+.fnnum:hover::after { color: white; }
+ 
+/*--- Footnote Content Wrapper --*/
+.fncon {
+    position: absolute;
+    right: calc(var(--posX) + 160px);
+    line-height: 1.2;
+    padding: 0.80rem;
+    width: 12.3rem;
+    background: #DECAAD;
+    border: 2px solid black;
+    font-weight: initial;
+    font-style: normal;
+    text-align: initial;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9;
+    transition:
+        opacity 0.15s linear var(--fnLinger),
+        right var(--fnTransition) cubic-bezier(.08,.72,.5,.94) var(--fnLinger),
+        visibility 0.01s linear var(--fnInteract);
 }
-
-div.charEntryHeading {
-    display :table;
-    margin-left:10%;
-    margin-right:10%;
-    margin-top:5px;
+.fnnum:hover + .fncon, .fncon:hover {
+    opacity: 1;
+    right: var(--posX);
+    visibility: visible;
+    transition:
+        opacity 0.15s linear,
+        right var(--fnTransition) cubic-bezier(.08,.72,.5,.94);
 }
-
-
-div.shortDesc {
-    margin-top: 2.5%;
+ 
+.fncon::before {
+    position: absolute;
+    top: 0; left: 0;
+    transform: translateX(-102%) translateY(-55%) scale(1.15);
+    background-color: var(--fnColor, #D4C6A5);
+    color: white;
+    content: "*";
+    font-size: initial;
+    font-weight: bold;
+    font-style: initial;
+    padding: 0.18rem 0.32em 0.08rem;
 }
-
-div.charEntry:hover {
-    transform: scale(105%) translateX(0) ;
-    background-color: #e7c9a9;
+ 
+/*--- Mobile Query --*/
+@media only screen and (max-width: 1279px) {
+    .fncon {
+        position: fixed;
+        bottom: 1.3rem;
+        left: calc(11% - 50px);
+        width: 70%;
+        transition:
+            opacity 0.15s linear var(--fnLinger),
+            left var(--fnTransition) cubic-bezier(.08,.72,.5,.94) var(--fnLinger),
+            visibility 0.01s linear var(--fnInteract);
+    }
+    .fnnum:hover + .fncon, .fncon:hover {
+        left: 11%;
+        transition:
+            opacity 0.15s linear,
+            left var(--fnTransition) cubic-bezier(.08,.72,.5,.94);
+    }
 }
-
-div.tableDesc {
-    display: table;
-    margin: 2px 1% 2px 1% ;
-    height: 80%;
-}
-
-p.verticalAligned {
-    margin: 0px 0px 0px 0px;
-    white-space: normal;
-    padding: 2px;
-}
-
-.aTerminal {
-    color: #b0b050;
-}
-
-.longDesc {
-    text-align:justify;
-    height:80%;
-}
-
-a.titleLink:link {
-    color: #006E33;
-}
-
-a.titleLink:visited {
-    color: #0a6434;
-}
-
-table.basicIDTable {
-    table-layout:auto;
-    width: 100%;
-    border-collapse:separate;
-    border-spacing:3px;
-    border:#8D7B68 1px;
-    height: 80%;
-}
-
-span.scrollText {
-    display: block; /* Important to give the content a width */
-
-    width: 100%;
-    transform: translateX(100%); /* Animation start out of the screen */
-    white-space:nowrap;
-    /* Add the animation */
-    animation: move 20s linear infinite /* infinite make reapeat the animation indefinitely */;
-}
-@keyframes move {
-    to { transform: translateX(-150%); }
-}
-li.noMargin {
-    margin-left:0%;   
-}
-
-
-/*Image Cases */
-
-.dip {
-    background-color:#8D7B68;
-}
-
-div.charEntryMed {
-    background-color: #C8B6A6;
-    opacity:1;
-}
-
-
-
-
-
