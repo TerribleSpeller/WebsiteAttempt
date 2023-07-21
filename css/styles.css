@@ -33,26 +33,6 @@ li a:hover::before{
     border-radius:5px;
 }
 
-.bg-whites {
-    background-color: #FCFBF4;
-}
-
-.bg-brown-to-whitecream {
-    background-image: linear-gradient(to bottom, #DECAAD, #FCFBF4);
-}
-
-.bg-whites-to-grey {
-    background-image: linear-gradient(to bottom, #FCFBF4, #cbcbcb);
-}
-
-.bg-grey {
-    background-color: #cbcbcb;
-}
-
-.bg-grey-to-white {
-    background-image: linear-gradient(to bottom, #cbcbcb, #FCFBF4);
-
-}
 
 
 /*
@@ -82,25 +62,12 @@ li a:hover::before{
     flex-wrap:wrap;
 }
 
-.card-text {
-    text-align:justify;
-}
-
-
-
 /*
 Unique Shit
 */
 
 .link-color-unique {
     color: #755951
-}
-
-.image-div {
-    width: auto;
-    margin: 0 0 15px 20px;
-    padding: 15px;
-    text-align: center;
 }
 
 /*Shit I stole from the SCP Wiki lmao*/
@@ -151,10 +118,10 @@ Unique Shit
 /*--- Footnote Content Wrapper --*/
 .fncon {
     position: absolute;
-    right: calc(var(--posX) + 300px);
+    right: calc(var(--posX) + 160px);
     line-height: 1.2;
     padding: 0.80rem;
-    width: 15.3rem;
+    width: 12.3rem;
     background: #DECAAD;
     border: 2px solid black;
     font-weight: initial;
