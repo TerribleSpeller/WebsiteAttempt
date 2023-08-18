@@ -1,2 +1,2 @@
 # WebsiteAttempt
-Ignore me, trying to make a website
+An attempt and a foray into trying out HTML5, CSS, and some rudimentary JS.
